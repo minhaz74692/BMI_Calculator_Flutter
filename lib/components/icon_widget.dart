@@ -1,10 +1,7 @@
 //ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-const genderTextStyle = TextStyle(
-    fontSize: 18.0,
-    color: Color(0xFF8D8E98),
-);
+import '../constants.dart';
 class IconWidget extends StatelessWidget {
   const IconWidget({super.key, required this.gender, required this.iconName});
   final String gender;
@@ -19,7 +16,7 @@ class IconWidget extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-          Text(gender, style: genderTextStyle),
+          Text(gender, style: kLabelTextStyle),
         ]
     );
   }

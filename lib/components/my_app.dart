@@ -1,6 +1,9 @@
 //ignore_for_file: prefer_const_constructors
-import 'package:bmi_calculator/InputPage.dart';
-import 'package:bmi_calculator/ThemePractice.dart';
+import 'package:bmi_calculator/screens//input_page.dart';
+import 'package:bmi_calculator/screens//result_page.dart';
+import 'package:bmi_calculator/screens/screen1.dart';
+import 'package:bmi_calculator/screens//screen2.dart';
+import 'package:bmi_calculator/components/theme_practice.dart';
 import 'package:flutter/material.dart';
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
@@ -22,10 +25,16 @@ class _MyAppState extends State<MyApp> {
         hoverColor: Color(0xFF0E161F),
         colorScheme: ColorScheme.dark().copyWith(
           primary: Color(0xFF0E161F),
-          secondary: Colors.blue,
         ),
       ),
       home: InputPage(),
+      // initialRoute: '/',
+      // routes: {
+      //   '/': (context)=> InputPage(),
+      //   '/first': (context)=> Screen1(),
+      //   '/second': (context) => Screen2(),
+      //   '/result': (context)=> ResultPage(),
+      // },
     );
   }
 }
